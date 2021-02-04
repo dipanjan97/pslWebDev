@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Property Test</title>
+    <style>
+        
+        #d1{
+            
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            z-index: -1;
+        }
+
+        #d2{
+            position: absolute;
+            top:40%;
+            left:40%;
+            height: 200px;
+            width: 200px;
+            background-color:green;
+            z-index: -1;
+        }
+
+        #d3{
+            position: absolute;
+            top:40%;
+            left:40%;
+            height: 200px;
+            width: 200px;
+            background-color:blue;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+            <center> Red </center>
+            <div id="d2">
+                <center> Green </center>
+                <div id="d3">
+                    <center> Blue </center>
+                </div>
+            </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>
