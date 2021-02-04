@@ -1,0 +1,56 @@
+#head{
+    text-align: center;
+    background-color: blue;
+    color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 1px 5px;
+    overflow: hidden;
+    background-color:grey;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #c1{
+      background-color:rgb(185, 184, 184);
+  }
+
+  #c3{
+      background-color:rgb(185, 184, 184);
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  

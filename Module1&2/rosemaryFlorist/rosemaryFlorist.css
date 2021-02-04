@@ -1,0 +1,60 @@
+ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 1px 2px;
+    overflow: hidden;
+    background-color: darksalmon;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(177, 52, 52);
+    color: white;
+  }
+
+  #id{
+      padding: 5px 5px px 5px;
+      margin-top: 10px;
+      margin-left: 5px;
+  }
+  
+  #Order{
+      margin-top: 15px;
+      font-size: large;
+      font-weight: bold;
+      border-radius: 2px;
+  }
+
+  .text{
+      text-align: justify;
+      margin-top: 25px;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+  }  

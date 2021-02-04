@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div position Demo</title>
+    <style>
+
+        #st{
+            padding-left: 10px;
+            padding-top: 10px;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            position: static;
+        }
+
+        #rel{
+            position: relative;
+            left: 30px;
+            top:20px;
+            background-color: rgb(255, 174, 0);
+            height: 200px;
+            width:300px;
+        }
+
+        #abs{
+            position: absolute;
+            top :40px;
+            right:0px;
+            bottom: 0px;
+            background-color: rgb(3, 73, 3);
+
+        }
+
+        #fixed{
+            position: fixed;
+            bottom:0px;
+            right: 500px;
+            top: 550px;
+            left: 450px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="st">
+        <p>The div element has position static</p>
+    </div>
+    <br>
+
+    <div id="rel">
+        <p>The div element has position relative</p>
+
+        <div id="abs">
+            <p>The div element has position absolute</p>
+
+        </div>
+
+    </div>
+
+    <div id="fixed">
+        <p>The div element has position fixed</p>
+    </div>
+</body>
+</html>
