@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Place</title>
+    <script src="./placeOrder.js"></script>
+</head>
+<body>
+    <h1>Place your Order</h1><br>
+    
+    <form>
+        <fieldset style="align-content: center;">
+            <legend>Personal Details</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name Only"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name Only"><br><br>
+                <label for="em">Email:</label><br>
+                <input type="email" id="em" name="em" placeholder="example@domain.com"><br><br>
+                <label for="tel">Telephone</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="Eg. +447000 0000000"><br><br>
+                <label for="sh">Shoesize</label><br>
+                <input type="number" id="sh" name="sh" value="9"><br><br>
+            </legend>
+        </fieldset>
+
+        <br><br><br><br>
+
+        <fieldset>
+            <legend>Billing address</legend>
+            <label for="add">Address:</label>
+            <textarea id="add" name="add" rows="4" cols="50">   
+            </textarea>
+            <br><br>
+            <label for="pin">Post Code</label><br>
+            <input type="number" id="pin" name="pin"><br><br>
+            <label for="country">Country</label><br>
+            <input type="text" id="country" name="country"><br><br>
+
+
+        </fieldset>
+
+        <br><br>
+        <fieldset>
+            <legend>Card details</legend>
+
+            <fieldset>
+                <legend>Card type</legend>
+                    <input type="radio" id="VISA" name="ctype" value="VISA">
+                    <label for="VISA">VISA</label>
+                    <input type="radio" id="mc" name="ctype" value="Mastercard">
+                    <label for="mc">Female</label>
+                    <input type="radio" id="amex" name="ctype" value="AMEX">
+                    <label for="other">AMEX</label>
+            </fieldset>
+
+            <br>
+            <label for="nameC">Name</label><br>
+            <input type="text" name="nameC" id="nameC" placeholder="Name as it appears on your card"><br><br>
+            <label for="Cno">Card number</label><br>
+            <input type="number" name="Cno" id="Cno"><br><br>
+            <label for="Scode">Security code</label><br>
+            <input type="text" name="Scode" id="Scode"><br><br>
+            <label for="Exp">Expiry Date</label><br>
+            <input type="date" name="Exp" id="Exp"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <button onclick="validate()">Place Order</button>
+        </fieldset>
+</body>
+</html>

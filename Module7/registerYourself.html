@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+
+    <h1>Register Yourself</h1><br>
+    
+    <form>
+        <fieldset style="align-content: center;">
+            <legend>Personal Details</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name Only"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name Only"><br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" placeholder="mm/dd/yyy"><br><br>
+                <label for="em">Email:</label>
+                <input type="email" id="em" name="em" placeholder="example@domain.com"><br><br>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" placeholder="http://mysite.com"><br><br>
+                <label for="skill">Skills:</label><br><br>
+
+                    <select name="skill" id="skill">
+                    <option value="java">Java</option>
+                    <option value="js">JavaScript</option>
+                    <option value="py">Python</option>
+                    <option value="Dart">Dart</option>
+                    </select>
+
+                    <div class="slidecontainer">
+                        <p>Skill Level(1 Low - 100 High):</p>
+                        <input type="range" min="1" max="100" value="50">
+                    </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
