@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Web Worker</title>
+</head>
+<body>
+    <form  name="oddForm" action="javascript:findOdds()">
+    
+        <label for="ip">Enter the limit to calculate the odd numbers starting from 1 :</label> 
+        <input type="number" name="numOdds"><br>
+
+        <input type="submit" value="Start"> 
+        <button id="stpW">Stop</button>
+    </form>
+    <br>
+        
+    </p>
+
+ 
+        <p id="list"></p>
+    
+    
+    <script>
+
+        var worker;
+        
+
+        function findOdds(){
+            var numOdds=parseInt(document.forms["oddForm"]["numOdds"].value);
+            var worker=new Worker("oddCounter.js");
+            worker.postMessage(numOdds);
+
+            worker.onmessage=function(ev){
+                document.getElementById("list").innerHTML = ev.data;
+            }
+        }
+
+        function $(id)
+        {
+            return document.getElementById(id);
+        }  
+        $("stpW").onclick=function(){
+            worker.terminate();
+            worker=undefined;
+        }
+
+       
+
+    </script>
+</body>
+</html>

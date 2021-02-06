@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Grocery List</title>
+    <script>
+        function store(){
+            localStorage.setItem("Item 1",document.getElementById('i1').outerHTML);
+            localStorage.setItem("Item 2",document.getElementById('i2').outerHTML);
+            localStorage.setItem("Item 3",document.getElementById('i3').outerHTML);
+            localStorage.setItem("Item 4",document.getElementById('i4').outerHTML);
+            localStorage.setItem("Item 5",document.getElementById('i5').outerHTML);
+            localStorage.setItem("Item 6",document.getElementById('i6').outerHTML);
+        }
+        
+        function s1(){
+            sessionStorage.setItem("Item 1",document.getElementById("1").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 1<b></p>";
+        }
+
+        function s2(){
+            sessionStorage.setItem("Item 2",document.getElementById("2").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 2<b></p>";
+        }
+
+        function s3(){
+            sessionStorage.setItem("Item 3",document.getElementById("3").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 3<b></p>";
+        }
+
+
+        function s4(){
+            sessionStorage.setItem("Item 4",document.getElementById("4").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 4</b></p>";
+        }
+
+        function s5(){
+            sessionStorage.setItem("Item 5",document.getElementById("5").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 5</b></p>";
+        }
+
+        function s6(){
+            sessionStorage.setItem("Item 6",document.getElementById("6").outerHTML);
+            document.getElementById("cart").innerHTML+="<p><b>Item 6<b></p>";
+        }
+
+        
+            
+        function sout(){
+            sessionStorage.clear();
+            location.href="groceryLoginPage.html"
+        }
+        
+    </script>
+</head>
+<body onload="store()">
+
+    <h1>Welcome User!</h1>
+
+    <br><br>
+
+    <p>
+        <ul>
+            <li id="1" onclick="s1()" ><strong>Item 1</strong></li><br>
+            <li id="2" onclick="s2()"><strong>Item 2</strong></li><br>
+            <li id="3" onclick="s3()"><strong>Item 3</strong></li><br>
+            <li id="4" onclick="s4()"><strong>Item 4</strong></li><br>
+            <li id="5" onclick="s5()"><strong>Item 5</strong></li><br>
+            <li id="6" onclick="s6()"><strong>Item 6</strong></li><br>
+        </ul>
+    </p>
+
+    <br><br>
+
+    <h3>Items in your cart:</h3><br>
+
+    <div id="cart">
+
+    </div>
+
+    <br>
+    <button onclick="sout()">Sign Out</button>
+    
+</body>
+</html>

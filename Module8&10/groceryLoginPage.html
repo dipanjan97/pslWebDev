@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Login Page</title>
+    <script type="text/javascript">
+
+        function redirect(){
+            const un=document.getElementById("uname");
+            const p=document.getElementById("pass");
+
+            if(un.value==="dipanjan" && p.value==="root"){
+                sessionStorage.setItem("username",un);
+                sessionStorage.setItem("password",p);
+                location.href="groceryPage.html"
+            }else{
+                alert("Wrong Credentials")
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    
+    <h1>Login User</h1>
+    <br><br>
+    <p>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname" value="dipanjan"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" value="root"><br><br>
+
+        <button onclick="redirect()">Sign In</a></button>
+    </p>
+</body>
+</html>
