@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <style>
+        #vid{
+            width:50%;
+            height: 30%;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <video  id="vid" controls>
+            <source src="./vid&img/Bikers and Carriages Driving on Street.mp4" type="video/mp4">
+    </div>
+
+    <button id="rep"> Replay </button>
+
+    <script>
+        var media=document.querySelector('video');
+        rep.addEventListener("click",function(){
+            media.currentTime=0;
+        })
+    </script>
+</body>
+</html>
